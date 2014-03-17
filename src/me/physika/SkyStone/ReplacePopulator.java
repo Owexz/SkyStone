@@ -190,7 +190,22 @@ public class ReplacePopulator extends BlockPopulator
                     {
                         block.setType(Material.SAND);
                         block.setData((byte)1);
-                    } else 
+                    } else                     
+                    if(block.getType() == Material.DOUBLE_STEP)
+                    {
+                        block.setType(Material.STONE);
+                        block.setData((byte)1);
+                    } else                     
+                    if(block.getType() == Material.STAINED_GLASS)
+                    {
+                        block.setType(Material.STONE);
+                        block.setData((byte)3);
+                    } else                     
+                    if(block.getType() == Material.WOOL)
+                    {
+                        block.setType(Material.STONE);
+                        block.setData((byte)5);
+                    } else 	
                     if(block.getType() == Material.EMERALD_BLOCK)
                         block.setType(Material.AIR);
 

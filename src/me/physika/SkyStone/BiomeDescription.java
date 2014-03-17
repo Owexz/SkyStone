@@ -190,14 +190,21 @@ public class BiomeDescription {
 		cold_taiga.snow = true;
 		
 		//Deep Ocean
+		deep_ocean.chanceOfIsland = 0.0; //Lakes are not generating in Oceans, hence no islands will generate for the time being.
+		deep_ocean.islandRockMaterial = (byte)Material.STONE.getId();
+		deep_ocean.islandSoilMaterial = (byte)Material.SAND.getId();
+		deep_ocean.islandSurfaceMaterial = (byte)Material.SAND.getId();
+		deep_ocean.lakeChance = 1.0;
+		deep_ocean.treeDensity = 0.0;
 		deep_ocean.cliffs = false;
-		deep_ocean.lakeChance = 0.99;
-		deep_ocean.treeDensity = 0.002;
-		deep_ocean.treeType = extreme_hills.treeType;
-		deep_ocean.treeTypeChance = extreme_hills.treeTypeChance;
-		deep_ocean.roughness = 0.0;
-		deep_ocean.chanceOfIsland = 0.05;
-		deep_ocean.chanceOfCave = 0.0;
+		deep_ocean.roughness = 2.0;
+		deep_ocean.frequency = 0.3;
+		deep_ocean.cactusDensity = 0.0;
+        deep_ocean.shrubDensity = 0.0;
+        deep_ocean.pondWaterChance = 0.0;
+        deep_ocean.pondLavaChance = 0.0;
+        deep_ocean.lavaFallChance = 0.0;
+        deep_ocean.chanceOfCave = 0.0;
 		
 		//Desert
 		desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
@@ -670,14 +677,21 @@ public class BiomeDescription {
 		mushroom_shore.mushroomDensity = 0.01;
 		
 		//Ocean
+		ocean.chanceOfIsland = 0.0; //Lakes are not generating in Oceans, hence no islands will generate for the time being.
+		ocean.islandRockMaterial = (byte)Material.STONE.getId();
+		ocean.islandSoilMaterial = (byte)Material.SAND.getId();
+		ocean.islandSurfaceMaterial = (byte)Material.SAND.getId();
+		ocean.lakeChance = 1.0;
+		ocean.treeDensity = 0.0;
 		ocean.cliffs = false;
-		ocean.lakeChance = 0.7;
-		ocean.treeDensity = 0.002;
-		ocean.treeType = extreme_hills.treeType;
-		ocean.treeTypeChance = extreme_hills.treeTypeChance;
-		ocean.roughness = 3.0;
-		ocean.chanceOfIsland = 0.05;
-		ocean.chanceOfCave = 0.0;
+		ocean.roughness = 2.0;
+		ocean.frequency = 0.3;
+		ocean.cactusDensity = 0.0;
+        ocean.shrubDensity = 0.0;
+        ocean.pondWaterChance = 0.0;
+        ocean.pondLavaChance = 0.0;
+        ocean.lavaFallChance = 0.0;
+        ocean.chanceOfCave = 0.0;
 		
 		//Plains
 		plains.lakeChance = 0.01;
@@ -685,7 +699,7 @@ public class BiomeDescription {
 		plains.roughness = 3.0;
 		plains.frequency = 0.6;
 		plains.shrubDensity = 0.3;
-		plains.flowerDensity = 0.07;
+		plains.flowerDensity = 0.04;
 		plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
 		plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
 				
@@ -955,9 +969,9 @@ public class BiomeDescription {
 	\********************************************************************************************************/
 	
 	//Basic Island Appearance
-	public double chanceOfIsland = 0.25; 			//Chance of this type of island to appear centered in any given chunk
-	public int islandSizeMin = 40;					//Minimum lateral size of the island
-	public int islandSizeMax = 90;					//Maximum lateral size of the island
+	public double chanceOfIsland = 0.15; 			//Chance of this type of island to appear centered in any given chunk
+	public int islandSizeMin = 70;					//Minimum lateral size of the island
+	public int islandSizeMax = 120;					//Maximum lateral size of the island
 	public double islandSquareRegularity = 0.5;		//Coefficient of squareness (totally made this up but it works)
 	public int islandHeightMin = 16;				//Minimum vertical size of the island
 	public int islandHeightMax = 128;				//Maximum vertical size of the island
@@ -1034,12 +1048,12 @@ public class BiomeDescription {
 	public int boulderClusterMin = 3;	//Cluster minimum size
 	public int boulderClusterMax = 5;	//Cluster maximum size
 	
-	//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond}
-	public byte[] oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35};							//Had to use block IDs because it was being stupid (see above list)
-	public double[] oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001}; //Chance of each ore spawning
-	public double[] oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};					//Minimum percentage depth to spawn each ore
-	public int[] oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2};										//Minimum vein size of each ore
-	public int[] oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5};									//Maximum vein size of each ore
+	//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, granite, dirorite, andesite}
+	public byte[] oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 43, 95, 35};							//Had to use block IDs because it was being stupid (see above list)
+	public double[] oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.002, 0.002, 0.002}; //Chance of each ore spawning
+	public double[] oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};					//Minimum percentage depth to spawn each ore
+	public int[] oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 5, 5, 5};										//Minimum vein size of each ore
+	public int[] oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 16, 16, 16};									//Maximum vein size of each ore
 	
 	
 	public boolean rollIsland(Random random) {

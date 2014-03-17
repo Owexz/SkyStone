@@ -385,7 +385,8 @@ public class Island extends Schematic {
 				
 				//If the block is on the edge of the island...
 				if(distanceFromEdge[i][k] == 1) {
-					int jm = random.nextInt(heightMap[i][k] - bottomMap[i][k] + 1) + bottomMap[i][k];
+					int height =  heightMap[i][k] - bottomMap[i][k] + 1;
+					int jm = height > 0 ? random.nextInt(height) : 0 + bottomMap[i][k];
 					
 					//...randomly remove the bottom blocks from that column 
 					for(int j = 0; j < jm; j++) {
