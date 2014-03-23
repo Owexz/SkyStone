@@ -73,16 +73,16 @@ public class BiomeDescription {
 	
 	static {
 		
-		//Beach
-		beach.islandRockMaterial = (byte)Material.STONE.getId();
-		beach.islandSoilMaterial = (byte)Material.SAND.getId();
-		beach.islandSurfaceMaterial = (byte)Material.SAND.getId();
-		beach.lakeChance = 1.0;
-		beach.treeDensity = 0.0;
-		beach.cliffs = false;
-		beach.roughness = 6D;
-		beach.frequency = 0.3;
-		beach.cactusDensity = 0.00;
+	//Beach
+	beach.islandRockMaterial = (byte)Material.STONE.getId();
+	beach.islandSoilMaterial = (byte)Material.SAND.getId();
+	beach.islandSurfaceMaterial = (byte)Material.SAND.getId();
+	beach.lakeChance = 1.0;
+	beach.treeDensity = 0.0;
+	beach.cliffs = false;
+	beach.roughness = 6D;
+	beach.frequency = 0.3;
+	beach.cactusDensity = 0.00;
         beach.shrubDensity = 0.02;
         beach.shrubType = new byte[1];
         beach.shrubTypeChance = (new double[] {1.0});
@@ -135,71 +135,71 @@ public class BiomeDescription {
         birch_forest_mountains.shrubType = (new byte[] {1, 2});
         birch_forest_mountains.shrubTypeChance = (new double[] {0.7, 0.3});
 		
-		//Cold Beach
-		cold_beach.cliffs = true;
-		cold_beach.lakeChance = 1.0;
-		cold_beach.treeDensity = 0.002;
-		cold_beach.treeType = frozen_ocean.treeType;
-		cold_beach.treeTypeChance = frozen_ocean.treeTypeChance;
-		cold_beach.roughness = 6.0;
-		cold_beach.frequency = 0.3;
-		cold_beach.snow = true;
-		cold_beach.islandRockMaterial = (byte) Material.STONE.getId();
-		cold_beach.islandSoilMaterial = (byte) Material.SAND.getId();
-		cold_beach.islandSurfaceMaterial = (byte) Material.SAND.getId();
-		cold_beach.islandSoilDepth = 0.5;
-		cold_beach.chanceOfCave = 0.0;
+	//Cold Beach
+	cold_beach.cliffs = true;
+	cold_beach.lakeChance = 1.0;
+	cold_beach.treeDensity = 0.002;
+	cold_beach.treeType = frozen_ocean.treeType;
+	cold_beach.treeTypeChance = frozen_ocean.treeTypeChance;
+	cold_beach.roughness = 6.0;
+	cold_beach.frequency = 0.3;
+	cold_beach.snow = true;
+	cold_beach.islandRockMaterial = (byte) Material.STONE.getId();
+	cold_beach.islandSoilMaterial = (byte) Material.SAND.getId();
+	cold_beach.islandSurfaceMaterial = (byte) Material.SAND.getId();
+	cold_beach.islandSoilDepth = 0.5;
+	cold_beach.chanceOfCave = 0.0;
 		
-		//Cold Taiga
-		cold_taiga.cliffs = false;
-		cold_taiga.lakeChance = 0.01;
-		cold_taiga.treeDensity = 0.001;
-		cold_taiga.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.TALL_REDWOOD});
-		cold_taiga.treeTypeChance = (new double[] {0.2, 0.8});
-		cold_taiga.roughness = 4.0;
-		cold_taiga.frequency = 0.2;
-		cold_taiga.shrubDensity = 0.6;
-		cold_taiga.shrubType = new byte[] {1, 2};
-		cold_taiga.shrubTypeChance = new double[] {0.9, 0.1};
-		cold_taiga.snow = true;
+	//Cold Taiga
+	cold_taiga.cliffs = false;
+	cold_taiga.lakeChance = 0.01;
+	cold_taiga.treeDensity = 0.001;
+	cold_taiga.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.TALL_REDWOOD});
+	cold_taiga.treeTypeChance = (new double[] {0.2, 0.8});
+	cold_taiga.roughness = 4.0;
+	cold_taiga.frequency = 0.2;
+	cold_taiga.shrubDensity = 0.6;
+	cold_taiga.shrubType = new byte[] {1, 2};
+	cold_taiga.shrubTypeChance = new double[] {0.9, 0.1};
+	cold_taiga.snow = true;
 		
-		//Cold Taiga Hills
-		cold_taiga_hills.cliffs = true;
-		cold_taiga_hills.lakeChance = 0.01;
-		cold_taiga_hills.treeDensity = 0.001;
-		cold_taiga_hills.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.TALL_REDWOOD});
-		cold_taiga_hills.treeTypeChance = (new double[] {0.2, 0.8});
-		cold_taiga_hills.roughness = 16.0;
-		cold_taiga_hills.frequency = 0.6;
-		cold_taiga_hills.shrubDensity = 0.6;
-		cold_taiga_hills.shrubType = new byte[] {1, 2};
-		cold_taiga_hills.shrubTypeChance = new double[] {0.9, 0.1};
-		cold_taiga.snow = true;
+	//Cold Taiga Hills
+	cold_taiga_hills.cliffs = true;
+	cold_taiga_hills.lakeChance = 0.01;
+	cold_taiga_hills.treeDensity = 0.001;
+	cold_taiga_hills.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.TALL_REDWOOD});
+	cold_taiga_hills.treeTypeChance = (new double[] {0.2, 0.8});
+	cold_taiga_hills.roughness = 16.0;
+	cold_taiga_hills.frequency = 0.6;
+	cold_taiga_hills.shrubDensity = 0.6;
+	cold_taiga_hills.shrubType = new byte[] {1, 2};
+	cold_taiga_hills.shrubTypeChance = new double[] {0.9, 0.1};
+	cold_taiga.snow = true;
 		
-		//Cold Taiga Mountains
-		cold_taiga_mountains.cliffs = false;
-		cold_taiga_mountains.lakeChance = 0.01;
-		cold_taiga_mountains.treeDensity = 0.001;
-		cold_taiga_mountains.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.TALL_REDWOOD});
-		cold_taiga_mountains.treeTypeChance = (new double[] {0.2, 0.8});
-		cold_taiga_mountains.roughness = 20.0;
-		cold_taiga_mountains.frequency = 0.8;
-		cold_taiga_mountains.shrubDensity = 0.6;
-		cold_taiga_mountains.shrubType = new byte[] {1, 2};
-		cold_taiga_mountains.shrubTypeChance = new double[] {0.9, 0.1};
-		cold_taiga.snow = true;
+	//Cold Taiga Mountains
+	cold_taiga_mountains.cliffs = false;
+	cold_taiga_mountains.lakeChance = 0.01;
+	cold_taiga_mountains.treeDensity = 0.001;
+	cold_taiga_mountains.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.TALL_REDWOOD});
+	cold_taiga_mountains.treeTypeChance = (new double[] {0.2, 0.8});
+	cold_taiga_mountains.roughness = 20.0;
+	cold_taiga_mountains.frequency = 0.8;
+	cold_taiga_mountains.shrubDensity = 0.6;
+	cold_taiga_mountains.shrubType = new byte[] {1, 2};
+	cold_taiga_mountains.shrubTypeChance = new double[] {0.9, 0.1};
+	cold_taiga.snow = true;
 		
-		//Deep Ocean
-		deep_ocean.chanceOfIsland = 0.0; //Lakes are not generating in Oceans, hence no islands will generate for the time being.
-		deep_ocean.islandRockMaterial = (byte)Material.STONE.getId();
-		deep_ocean.islandSoilMaterial = (byte)Material.SAND.getId();
-		deep_ocean.islandSurfaceMaterial = (byte)Material.SAND.getId();
-		deep_ocean.lakeChance = 1.0;
-		deep_ocean.treeDensity = 0.0;
-		deep_ocean.cliffs = false;
-		deep_ocean.roughness = 2.0;
-		deep_ocean.frequency = 0.3;
-		deep_ocean.cactusDensity = 0.0;
+	//Deep Ocean
+	deep_ocean.chanceOfIsland = 0.0; //Lakes are not generating in Oceans, hence no islands will generate for the time being.
+	deep_ocean.islandRockMaterial = (byte)Material.STONE.getId();
+	deep_ocean.islandSoilMaterial = (byte)Material.SAND.getId();
+	deep_ocean.islandSurfaceMaterial = (byte)Material.SAND.getId();
+	deep_ocean.lakeChance = 1.0;
+	deep_ocean.treeDensity = 0.0;
+	deep_ocean.cliffs = false;
+	deep_ocean.roughness = 2.0;
+	deep_ocean.frequency = 0.3;
+	deep_ocean.cactusDensity = 0.0;
         deep_ocean.shrubDensity = 0.0;
         deep_ocean.pondWaterChance = 0.0;
         deep_ocean.pondLavaChance = 0.0;
@@ -207,7 +207,7 @@ public class BiomeDescription {
         deep_ocean.chanceOfCave = 0.0;
 		
 		//Desert
-		desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
+	desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
         desert.islandSoilMaterial = (byte)Material.SAND.getId();
         desert.islandSurfaceMaterial = (byte)Material.SAND.getId();
         desert.lakeChance = 0.0;
@@ -224,7 +224,7 @@ public class BiomeDescription {
         desert.lavaFallChance = 0.0;
         
 		//Desert Hills
-		desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
+	desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
         desert.islandSoilMaterial = (byte)Material.SAND.getId();
         desert.islandSurfaceMaterial = (byte)Material.SAND.getId();
         desert.lakeChance = 0.0;
@@ -241,7 +241,7 @@ public class BiomeDescription {
         desert.lavaFallChance = 0.0;
         
 		//Desert Mountains
-		desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
+	desert.islandRockMaterial = (byte)Material.SANDSTONE.getId();
         desert.islandSoilMaterial = (byte)Material.SAND.getId();
         desert.islandSurfaceMaterial = (byte)Material.SAND.getId();
         desert.lakeChance = 0.0;
@@ -351,9 +351,9 @@ public class BiomeDescription {
         flower_forest.shrubDensity = 0.3;
         flower_forest.shrubType = (new byte[] {1, 2});
         flower_forest.shrubTypeChance = (new double[] {0.7, 0.3});
-		flower_forest.flowerDensity = 0.2;
-		flower_forest.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
-		flower_forest.flowerTypeChance = new double[] {0.2, 0.05, 0.05, 0.05, 0.15, 0.15, 0.15, 0.15, 0.05};
+	flower_forest.flowerDensity = 0.2;
+	flower_forest.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
+	flower_forest.flowerTypeChance = new double[] {0.2, 0.05, 0.05, 0.05, 0.15, 0.15, 0.15, 0.15, 0.05};
         
 		//Forest
         forest.cliffs = false;
@@ -377,94 +377,94 @@ public class BiomeDescription {
         forest_hills.shrubType = (new byte[] {1, 2});
         forest_hills.shrubTypeChance = (new double[] {0.7, 0.3});
 		
-		//Frozen Ocean
-		frozen_ocean.cliffs = false;
-		frozen_ocean.lakeChance = 1.0;
-		frozen_ocean.treeDensity = 0.001;
-		frozen_ocean.treeType = new TreeType[] {TreeType.TALL_REDWOOD};
-		frozen_ocean.treeTypeChance = new double[] {1.0};
-		frozen_ocean.roughness = 0.0;
-		frozen_ocean.snow = true;
-		frozen_ocean.islandFluidMaterial = (byte) Material.ICE.getId();
-		frozen_ocean.chanceOfIsland = 0.001;
+	//Frozen Ocean
+	frozen_ocean.cliffs = false;
+	frozen_ocean.lakeChance = 1.0;
+	frozen_ocean.treeDensity = 0.001;
+	frozen_ocean.treeType = new TreeType[] {TreeType.TALL_REDWOOD};
+	frozen_ocean.treeTypeChance = new double[] {1.0};
+	frozen_ocean.roughness = 0.0;
+	frozen_ocean.snow = true;
+	frozen_ocean.islandFluidMaterial = (byte) Material.ICE.getId();
+	frozen_ocean.chanceOfIsland = 0.001;
+	
+	//Frozen River
+	frozen_river.cliffs = false;
+	frozen_river.lakeChance = 0.9;
+	frozen_river.treeDensity = 0.002;
+	frozen_river.treeType = frozen_ocean.treeType;
+	frozen_river.treeTypeChance = frozen_ocean.treeTypeChance;
+	frozen_river.roughness = 3.0;
+	frozen_river.frequency = 0.3;
+	frozen_river.snow = true;
+	frozen_river.islandFluidMaterial = (byte) Material.ICE.getId();
 		
-		//Frozen River
-		frozen_river.cliffs = false;
-		frozen_river.lakeChance = 0.9;
-		frozen_river.treeDensity = 0.002;
-		frozen_river.treeType = frozen_ocean.treeType;
-		frozen_river.treeTypeChance = frozen_ocean.treeTypeChance;
-		frozen_river.roughness = 3.0;
-		frozen_river.frequency = 0.3;
-		frozen_river.snow = true;
-		frozen_river.islandFluidMaterial = (byte) Material.ICE.getId();
+	//Hell		
+	hell.cliffs = true;
+	hell.cliffHeightMin = 5;
+	hell.cliffHeightMax = 10;
+	hell.lakeChance = 0.7;
+	hell.treeDensity = 0.0;
+	hell.roughness = 10.0;
+	hell.frequency = 4.0;
+	hell.islandFluidMaterial = (byte) Material.LAVA.getId();
+	hell.islandLakeBedMaterial = (byte) Material.SOUL_SAND.getId();
+	hell.islandSoilMaterial = (byte) Material.NETHERRACK.getId();
+	hell.islandRockMaterial = (byte) Material.NETHERRACK.getId();
+	hell.islandSurfaceMaterial = (byte) Material.NETHERRACK.getId();
+	hell.islandAltitudeMax = 64;
+	hell.islandAltitudeMax = 24;		
+	hell.shrubDensity = 0.002;
+	hell.shrubType = new byte[] {0};
+	hell.shrubTypeChance = new double[] {1.0};
 		
-		//Hell		
-		hell.cliffs = true;
-		hell.cliffHeightMin = 5;
-		hell.cliffHeightMax = 10;
-		hell.lakeChance = 0.7;
-		hell.treeDensity = 0.0;
-		hell.roughness = 10.0;
-		hell.frequency = 4.0;
-		hell.islandFluidMaterial = (byte) Material.LAVA.getId();
-		hell.islandLakeBedMaterial = (byte) Material.SOUL_SAND.getId();
-		hell.islandSoilMaterial = (byte) Material.NETHERRACK.getId();
-		hell.islandRockMaterial = (byte) Material.NETHERRACK.getId();
-		hell.islandSurfaceMaterial = (byte) Material.NETHERRACK.getId();
-		hell.islandAltitudeMax = 64;
-		hell.islandAltitudeMax = 24;		
-		hell.shrubDensity = 0.002;
-		hell.shrubType = new byte[] {0};
-		hell.shrubTypeChance = new double[] {1.0};
+	//Ice Mountains
+	ice_mountains.treeDensity = 0.003;
+	ice_mountains.treeType = frozen_ocean.treeType;
+	ice_mountains.treeTypeChance = frozen_ocean.treeTypeChance;
+	ice_mountains.lakeChance = 0.05;
+	ice_mountains.roughness = 20.0;
+	ice_mountains.frequency = 0.4;
+	ice_mountains.islandSizeMin = 64;
+	ice_mountains.islandSizeMax = 128;
+	ice_mountains.islandFluidMaterial = (byte) Material.ICE.getId();
+	ice_mountains.islandSurfaceMaterial = (byte) Material.SNOW_BLOCK.getId();
+	ice_mountains.islandSoilMaterial = (byte) Material.PACKED_ICE.getId();
+	ice_mountains.islandRockMaterial = (byte) Material.STONE.getId();
+	ice_mountains.snow = true;
+	ice_mountains.pondWaterChance = 0.0;
 		
-		//Ice Mountains
-		ice_mountains.treeDensity = 0.003;
-		ice_mountains.treeType = frozen_ocean.treeType;
-		ice_mountains.treeTypeChance = frozen_ocean.treeTypeChance;
-		ice_mountains.lakeChance = 0.05;
-		ice_mountains.roughness = 20.0;
-		ice_mountains.frequency = 0.4;
-		ice_mountains.islandSizeMin = 64;
-		ice_mountains.islandSizeMax = 128;
-		ice_mountains.islandFluidMaterial = (byte) Material.ICE.getId();
-		ice_mountains.islandSurfaceMaterial = (byte) Material.SNOW_BLOCK.getId();
-		ice_mountains.islandSoilMaterial = (byte) Material.PACKED_ICE.getId();
-		ice_mountains.islandRockMaterial = (byte) Material.STONE.getId();
-		ice_mountains.snow = true;
-		ice_mountains.pondWaterChance = 0.0;
+	//Ice Plains
+	ice_plains.cliffs = true;
+	ice_plains.lakeChance = 0.01;
+	ice_plains.treeDensity = 0.001;
+	ice_plains.treeType = new TreeType[] {TreeType.TALL_REDWOOD};
+	ice_plains.treeTypeChance = new double[] {1.0};
+	ice_plains.roughness = 2.0;
+	ice_plains.frequency = 0.3;
+	ice_plains.snow = true;		
+	ice_plains.islandFluidMaterial = (byte) Material.ICE.getId();
+	ice_plains.islandSurfaceMaterial = (byte) Material.SNOW_BLOCK.getId();
+	ice_plains.islandSoilMaterial = (byte) Material.PACKED_ICE.getId();
+	ice_plains.islandRockMaterial = (byte) Material.STONE.getId();
+	
+	//Ice Plains Spikes
+	ice_plains_spikes.cliffs = true;
+	ice_plains_spikes.lakeChance = 0.01;
+	ice_plains_spikes.treeDensity = 0.001;
+	ice_plains_spikes.treeType = new TreeType[] {TreeType.TALL_REDWOOD};
+	ice_plains_spikes.treeTypeChance = new double[] {1.0};
+	ice_plains_spikes.roughness = 2.0;
+	ice_plains_spikes.frequency = 0.3;
+	ice_plains_spikes.snow = true;
+	ice_plains_spikes.islandFluidMaterial = (byte) Material.ICE.getId();
+	ice_plains_spikes.islandSurfaceMaterial = (byte) Material.SNOW_BLOCK.getId();
+	ice_plains_spikes.islandSoilMaterial = (byte) Material.PACKED_ICE.getId();
+	ice_plains_spikes.islandRockMaterial = (byte) Material.STONE.getId();
 		
-		//Ice Plains
-		ice_plains.cliffs = true;
-		ice_plains.lakeChance = 0.01;
-		ice_plains.treeDensity = 0.001;
-		ice_plains.treeType = new TreeType[] {TreeType.TALL_REDWOOD};
-		ice_plains.treeTypeChance = new double[] {1.0};
-		ice_plains.roughness = 2.0;
-		ice_plains.frequency = 0.3;
-		ice_plains.snow = true;		
-		ice_plains.islandFluidMaterial = (byte) Material.ICE.getId();
-		ice_plains.islandSurfaceMaterial = (byte) Material.SNOW_BLOCK.getId();
-		ice_plains.islandSoilMaterial = (byte) Material.PACKED_ICE.getId();
-		ice_plains.islandRockMaterial = (byte) Material.STONE.getId();
-		
-		//Ice Plains Spikes
-		ice_plains_spikes.cliffs = true;
-		ice_plains_spikes.lakeChance = 0.01;
-		ice_plains_spikes.treeDensity = 0.001;
-		ice_plains_spikes.treeType = new TreeType[] {TreeType.TALL_REDWOOD};
-		ice_plains_spikes.treeTypeChance = new double[] {1.0};
-		ice_plains_spikes.roughness = 2.0;
-		ice_plains_spikes.frequency = 0.3;
-		ice_plains_spikes.snow = true;
-		ice_plains_spikes.islandFluidMaterial = (byte) Material.ICE.getId();
-		ice_plains_spikes.islandSurfaceMaterial = (byte) Material.SNOW_BLOCK.getId();
-		ice_plains_spikes.islandSoilMaterial = (byte) Material.PACKED_ICE.getId();
-		ice_plains_spikes.islandRockMaterial = (byte) Material.STONE.getId();
-		
-		//Jungle
-		jungle.cliffs = false;
-		jungle.frequency = 0.2;
+	//Jungle
+	jungle.cliffs = false;
+	jungle.frequency = 0.2;
         jungle.roughness = 8;
         jungle.treeDensity = 0.1;
         jungle.treeType = (new TreeType[] {TreeType.TREE, TreeType.JUNGLE, TreeType.SMALL_JUNGLE});
@@ -473,8 +473,8 @@ public class BiomeDescription {
         jungle.shrubDensity = 0.3;
         jungle.shrubType = (new byte[] {1, 2});
         jungle.shrubTypeChance = (new double[] {0.7, 0.3});
-		jungle.pumpkinDensity = 0.0;
-		jungle.watermelonDensity = 0.0;
+	jungle.pumpkinDensity = 0.0;
+	jungle.watermelonDensity = 0.0;
 		
 		//Jungle Edge
 		jungle_edge.cliffs = false;
@@ -486,8 +486,8 @@ public class BiomeDescription {
         jungle_edge.shrubDensity = 0.3;
         jungle_edge.shrubType = (new byte[] {1, 2});
         jungle_edge.shrubTypeChance = (new double[] {0.7, 0.3});
-		jungle_edge.pumpkinDensity = 0.0;
-		jungle_edge.watermelonDensity = 0.0;
+	jungle_edge.pumpkinDensity = 0.0;
+	jungle_edge.watermelonDensity = 0.0;
 		
 		//Jungle Hills
 		jungle_hills.cliffs = true;
@@ -499,11 +499,11 @@ public class BiomeDescription {
         jungle_hills.shrubDensity = 0.3;
         jungle_hills.shrubType = (new byte[] {1, 2});
         jungle_hills.shrubTypeChance = (new double[] {0.7, 0.3});
-		jungle_hills.pumpkinDensity = 0.0;
-		jungle_hills.watermelonDensity = 0.0;
+	jungle_hills.pumpkinDensity = 0.0;
+	jungle_hills.watermelonDensity = 0.0;
 		
 		//Jungle Mountain
-		jungle_mountains.cliffs = false;
+	jungle_mountains.cliffs = false;
         jungle_mountains.roughness = 20;
         jungle_mountains.treeDensity = 0.1;
         jungle_mountains.treeType = (new TreeType[] {TreeType.TREE, TreeType.JUNGLE, TreeType.SMALL_JUNGLE});
@@ -512,70 +512,70 @@ public class BiomeDescription {
         jungle_mountains.shrubDensity = 0.3;
         jungle_mountains.shrubType = (new byte[] {1, 2});
         jungle_mountains.shrubTypeChance = (new double[] {0.7, 0.3});
-		jungle_mountains.pumpkinDensity = 0.0;
-		jungle_mountains.watermelonDensity = 0.0;
+	jungle_mountains.pumpkinDensity = 0.0;
+	jungle_mountains.watermelonDensity = 0.0;
+	
+	//Mega Spruce Taiga
+	mega_spruce_taiga.cliffs = false;
+	mega_spruce_taiga.lakeChance = 0.01;
+	mega_spruce_taiga.treeDensity = 0.06;
+	mega_spruce_taiga.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
+	mega_spruce_taiga.treeTypeChance = (new double[] {0.6, 0.4});
+	mega_spruce_taiga.roughness = 4.0;
+	mega_spruce_taiga.frequency = 0.2;
+	mega_spruce_taiga.shrubDensity = 0.6;
+	mega_spruce_taiga.shrubType = new byte[] {1, 2};
+	mega_spruce_taiga.shrubTypeChance = new double[] {0.9, 0.1};
+	mega_spruce_taiga.snow = false;
+	
+	//Mega Spruce Taiga Hills
+	mega_spruce_taiga_hills.cliffs = true;
+	mega_spruce_taiga_hills.lakeChance = 0.06;
+	mega_spruce_taiga_hills.treeDensity = 0.001;
+	mega_spruce_taiga_hills.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
+	mega_spruce_taiga_hills.treeTypeChance = (new double[] {0.6, 0.4});
+	mega_spruce_taiga_hills.roughness = 12.0;
+	mega_spruce_taiga_hills.frequency = 0.2;
+	mega_spruce_taiga_hills.shrubDensity = 0.6;
+	mega_spruce_taiga_hills.shrubType = new byte[] {1, 2};
+	mega_spruce_taiga_hills.shrubTypeChance = new double[] {0.9, 0.1};
+	mega_spruce_taiga_hills.snow = false;
 		
-		//Mega Spruce Taiga
-		mega_spruce_taiga.cliffs = false;
-		mega_spruce_taiga.lakeChance = 0.01;
-		mega_spruce_taiga.treeDensity = 0.06;
-		mega_spruce_taiga.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
-		mega_spruce_taiga.treeTypeChance = (new double[] {0.6, 0.4});
-		mega_spruce_taiga.roughness = 4.0;
-		mega_spruce_taiga.frequency = 0.2;
-		mega_spruce_taiga.shrubDensity = 0.6;
-		mega_spruce_taiga.shrubType = new byte[] {1, 2};
-		mega_spruce_taiga.shrubTypeChance = new double[] {0.9, 0.1};
-		mega_spruce_taiga.snow = false;
+	//Mega Taiga
+	mega_taiga.cliffs = false;
+	mega_taiga.lakeChance = 0.06;
+	mega_taiga.treeDensity = 0.12;
+	mega_taiga.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
+	mega_taiga.treeTypeChance = (new double[] {0.3, 0.7});
+	mega_taiga.roughness = 4.0;
+	mega_taiga.frequency = 0.2;
+	mega_taiga.shrubDensity = 0.3;
+	mega_taiga.shrubType = new byte[] {1, 2};
+	mega_taiga.shrubTypeChance = new double[] {0.6, 0.4};
+	mega_taiga.snow = false;
+	mega_taiga.pumpkinDensity = 0.00002;
+	mega_taiga.boulderDensity = 0.02;
+	mega_taiga.islandSurfaceMaterial = (byte)Material.COAL_BLOCK.getId();
+	
+	//Mega Taiga Hills
+	mega_taiga_hills.cliffs = true;
+	mega_taiga_hills.lakeChance = 0.01;
+	mega_taiga_hills.treeDensity = 0.12;
+	mega_taiga_hills.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
+	mega_taiga_hills.treeTypeChance = (new double[] {0.3, 0.7});
+	mega_taiga_hills.roughness = 12.0;
+	mega_taiga_hills.frequency = 0.2;
+	mega_taiga_hills.shrubDensity = 0.15;
+	mega_taiga_hills.shrubType = new byte[] {1, 2};
+	mega_taiga_hills.shrubTypeChance = new double[] {0.6, 0.4};
+	mega_taiga_hills.snow = false;
+	mega_taiga_hills.pumpkinDensity = 0.00002;
+	mega_taiga_hills.boulderDensity = 0.02;
+	mega_taiga_hills.islandSurfaceMaterial = (byte)Material.COAL_BLOCK.getId(); //Replaced by Podzol
 		
-		//Mega Spruce Taiga Hills
-		mega_spruce_taiga_hills.cliffs = true;
-		mega_spruce_taiga_hills.lakeChance = 0.06;
-		mega_spruce_taiga_hills.treeDensity = 0.001;
-		mega_spruce_taiga_hills.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
-		mega_spruce_taiga_hills.treeTypeChance = (new double[] {0.6, 0.4});
-		mega_spruce_taiga_hills.roughness = 12.0;
-		mega_spruce_taiga_hills.frequency = 0.2;
-		mega_spruce_taiga_hills.shrubDensity = 0.6;
-		mega_spruce_taiga_hills.shrubType = new byte[] {1, 2};
-		mega_spruce_taiga_hills.shrubTypeChance = new double[] {0.9, 0.1};
-		mega_spruce_taiga_hills.snow = false;
-		
-		//Mega Taiga
-		mega_taiga.cliffs = false;
-		mega_taiga.lakeChance = 0.06;
-		mega_taiga.treeDensity = 0.12;
-		mega_taiga.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
-		mega_taiga.treeTypeChance = (new double[] {0.3, 0.7});
-		mega_taiga.roughness = 4.0;
-		mega_taiga.frequency = 0.2;
-		mega_taiga.shrubDensity = 0.3;
-		mega_taiga.shrubType = new byte[] {1, 2};
-		mega_taiga.shrubTypeChance = new double[] {0.6, 0.4};
-		mega_taiga.snow = false;
-		mega_taiga.pumpkinDensity = 0.00002;
-		mega_taiga.boulderDensity = 0.02;
-		mega_taiga.islandSurfaceMaterial = (byte)Material.COAL_BLOCK.getId();
-		
-		//Mega Taiga Hills
-		mega_taiga_hills.cliffs = true;
-		mega_taiga_hills.lakeChance = 0.01;
-		mega_taiga_hills.treeDensity = 0.12;
-		mega_taiga_hills.treeType = (new TreeType[] {TreeType.REDWOOD, TreeType.MEGA_REDWOOD});
-		mega_taiga_hills.treeTypeChance = (new double[] {0.3, 0.7});
-		mega_taiga_hills.roughness = 12.0;
-		mega_taiga_hills.frequency = 0.2;
-		mega_taiga_hills.shrubDensity = 0.15;
-		mega_taiga_hills.shrubType = new byte[] {1, 2};
-		mega_taiga_hills.shrubTypeChance = new double[] {0.6, 0.4};
-		mega_taiga_hills.snow = false;
-		mega_taiga_hills.pumpkinDensity = 0.00002;
-		mega_taiga_hills.boulderDensity = 0.02;
-		mega_taiga_hills.islandSurfaceMaterial = (byte)Material.COAL_BLOCK.getId(); //Replaced by Podzol
-		
-		//Mesa
-		mesa.islandSurfaceMaterial = (byte)Material.NOTE_BLOCK.getId(); //Replaced by Red Sand
-	    mesa.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
+	//Mesa
+	mesa.islandSurfaceMaterial = (byte)Material.NOTE_BLOCK.getId(); //Replaced by Red Sand
+	mesa.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
         mesa.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
         mesa.lakeChance = 0.0;
         mesa.treeDensity = 0.0;
@@ -586,9 +586,9 @@ public class BiomeDescription {
         mesa.pondLavaChance = 0.0;
         mesa.lavaFallChance = 0.0;
         
-		//Mesa Bryce
-		mesa_bryce.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
-	    mesa_bryce.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
+	//Mesa Bryce
+	mesa_bryce.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
+	mesa_bryce.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
         mesa_bryce.islandSurfaceMaterial = (byte)Material.HARD_CLAY.getId();
         mesa_bryce.lakeChance = 0.0;
         mesa_bryce.treeDensity = 0.0;
@@ -599,9 +599,9 @@ public class BiomeDescription {
         mesa_bryce.pondLavaChance = 0.0;
         mesa_bryce.lavaFallChance = 0.0;
 		
-		//Mesa Plateau
-		mesa_plateau.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
-	    mesa_plateau.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
+	//Mesa Plateau
+	mesa_plateau.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
+	mesa_plateau.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
         mesa_plateau.islandSurfaceMaterial = (byte)Material.HARD_CLAY.getId();
         mesa_plateau.lakeChance = 0.0;
         mesa_plateau.treeDensity = 0.0;
@@ -612,9 +612,9 @@ public class BiomeDescription {
         mesa_plateau.pondLavaChance = 0.0;
         mesa_plateau.lavaFallChance = 0.0;
         
-		//Mesa Plateau Forest
-		mesa_plateau_forest.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
-	    mesa_plateau_forest.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
+	//Mesa Plateau Forest
+	mesa_plateau_forest.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
+	mesa_plateau_forest.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
         mesa_plateau_forest.islandSurfaceMaterial = (byte)Material.HARD_CLAY.getId();
         mesa_plateau_forest.lakeChance = 0.0;
         mesa_plateau_forest.treeDensity = 0.0;
@@ -625,9 +625,9 @@ public class BiomeDescription {
         mesa_plateau_forest.pondLavaChance = 0.0;
         mesa_plateau_forest.lavaFallChance = 0.0;
         
-		//Mesa Plateau Forest Mountains
-		mesa_plateau_forest_mountains.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
-	    mesa_plateau_forest_mountains.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
+	//Mesa Plateau Forest Mountains
+	mesa_plateau_forest_mountains.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
+	mesa_plateau_forest_mountains.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
         mesa_plateau_forest_mountains.islandSurfaceMaterial = (byte)Material.HARD_CLAY.getId();
         mesa_plateau_forest_mountains.lakeChance = 0.0;
         mesa_plateau_forest_mountains.treeDensity = 0.0;
@@ -641,9 +641,9 @@ public class BiomeDescription {
         mesa_plateau_forest_mountains.treeType = (new TreeType[] {TreeType.TREE});
         mesa_plateau_forest_mountains.treeTypeChance = (new double[] {1.0});
         
-		//Mesa Plateau Mountains
-		mesa_plateau_mountains.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
-	    mesa_plateau_mountains.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
+	//Mesa Plateau Mountains
+	mesa_plateau_mountains.islandRockMaterial = (byte)Material.HARD_CLAY.getId();
+	mesa_plateau_mountains.islandSoilMaterial = (byte)Material.STAINED_CLAY.getId();
         mesa_plateau_mountains.islandSurfaceMaterial = (byte)Material.HARD_CLAY.getId();
         mesa_plateau_mountains.lakeChance = 0.0;
         mesa_plateau_mountains.treeDensity = 0.0;
@@ -654,67 +654,67 @@ public class BiomeDescription {
         mesa_plateau_mountains.pondLavaChance = 0.0;
         mesa_plateau_mountains.lavaFallChance = 0.0;
         
-		//Mushroom Island
-		mushroom_island.cliffs = true;
-		mushroom_island.lakeChance = 0.2;
-		mushroom_island.treeDensity = 0.04;
-		mushroom_island.roughness = 8.0;
-		mushroom_island.frequency = 0.3;
-		mushroom_island.islandSurfaceMaterial = (byte) Material.MYCEL.getId();
-		mushroom_island.treeType = new TreeType[] {TreeType.BROWN_MUSHROOM, TreeType.RED_MUSHROOM};
-		mushroom_island.treeTypeChance = new double[] {0.5, 0.5};
-		mushroom_island.mushroomDensity = 0.05;
+	//Mushroom Island
+	mushroom_island.cliffs = true;
+	mushroom_island.lakeChance = 0.2;
+	mushroom_island.treeDensity = 0.04;
+	mushroom_island.roughness = 8.0;
+	mushroom_island.frequency = 0.3;
+	mushroom_island.islandSurfaceMaterial = (byte) Material.MYCEL.getId();
+	mushroom_island.treeType = new TreeType[] {TreeType.BROWN_MUSHROOM, TreeType.RED_MUSHROOM};
+	mushroom_island.treeTypeChance = new double[] {0.5, 0.5};
+	mushroom_island.mushroomDensity = 0.05;
 		
-		//Mushroom Shore
-		mushroom_shore.cliffs = false;
-		mushroom_shore.lakeChance = 0.7;
-		mushroom_shore.treeDensity = 0.04;
-		mushroom_shore.roughness = 4.0;
-		mushroom_shore.frequency = 0.3;
-		mushroom_shore.islandSurfaceMaterial = (byte) Material.MYCEL.getId();
-		mushroom_shore.treeType = mushroom_island.treeType;
-		mushroom_shore.treeTypeChance = mushroom_island.treeTypeChance;
-		mushroom_shore.mushroomDensity = 0.01;
+	//Mushroom Shore
+	mushroom_shore.cliffs = false;
+	mushroom_shore.lakeChance = 0.7;
+	mushroom_shore.treeDensity = 0.04;
+	mushroom_shore.roughness = 4.0;
+	mushroom_shore.frequency = 0.3;
+	mushroom_shore.islandSurfaceMaterial = (byte) Material.MYCEL.getId();
+	mushroom_shore.treeType = mushroom_island.treeType;
+	mushroom_shore.treeTypeChance = mushroom_island.treeTypeChance;
+	mushroom_shore.mushroomDensity = 0.01;
 		
 		//Ocean
-		ocean.chanceOfIsland = 0.0; //Lakes are not generating in Oceans, hence no islands will generate for the time being.
-		ocean.islandRockMaterial = (byte)Material.STONE.getId();
-		ocean.islandSoilMaterial = (byte)Material.SAND.getId();
-		ocean.islandSurfaceMaterial = (byte)Material.SAND.getId();
-		ocean.lakeChance = 1.0;
-		ocean.treeDensity = 0.0;
-		ocean.cliffs = false;
-		ocean.roughness = 2.0;
-		ocean.frequency = 0.3;
-		ocean.cactusDensity = 0.0;
+	ocean.chanceOfIsland = 0.0; //Lakes are not generating in Oceans, hence no islands will generate for the time being.
+	ocean.islandRockMaterial = (byte)Material.STONE.getId();
+	ocean.islandSoilMaterial = (byte)Material.SAND.getId();
+	ocean.islandSurfaceMaterial = (byte)Material.SAND.getId();
+	ocean.lakeChance = 1.0;
+	ocean.treeDensity = 0.0;
+	ocean.cliffs = false;
+	ocean.roughness = 2.0;
+	ocean.frequency = 0.3;
+	ocean.cactusDensity = 0.0;
         ocean.shrubDensity = 0.0;
         ocean.pondWaterChance = 0.0;
         ocean.pondLavaChance = 0.0;
         ocean.lavaFallChance = 0.0;
         ocean.chanceOfCave = 0.0;
 		
-		//Plains
-		plains.lakeChance = 0.01;
-		plains.treeDensity = 0.001;
-		plains.roughness = 3.0;
-		plains.frequency = 0.6;
-		plains.shrubDensity = 0.3;
-		plains.flowerDensity = 0.04;
-		plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
-		plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
-				
-		//River
-		river.cliffs = false;
-		river.lakeChance = 1.0;
-		river.treeDensity = 0.001;
-		river.roughness = 6.0;
-		river.frequency = 0.6;
-		river.shrubDensity = 0.3;
-		river.shrubType = new byte[] {1, 2};
-		river.shrubTypeChance = new double[] {0.4, 0.6};
-		river.chanceOfCave = 0.0;
+	//Plains
+	plains.lakeChance = 0.01;
+	plains.treeDensity = 0.001;
+	plains.roughness = 3.0;
+	plains.frequency = 0.6;
+	plains.shrubDensity = 0.3;
+	plains.flowerDensity = 0.04;
+	plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
+	plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
+			
+	//River
+	river.cliffs = false;
+	river.lakeChance = 1.0;
+	river.treeDensity = 0.001;
+	river.roughness = 6.0;
+	river.frequency = 0.6;
+	river.shrubDensity = 0.3;
+	river.shrubType = new byte[] {1, 2};
+	river.shrubTypeChance = new double[] {0.4, 0.6};
+	river.chanceOfCave = 0.0;
 		
-		//Roofed Forest
+	//Roofed Forest
         roofed_forest.cliffs = false;
         roofed_forest.roughness = 8;
         roofed_forest.treeDensity = 0.09;
@@ -724,9 +724,9 @@ public class BiomeDescription {
         roofed_forest.shrubDensity = 0.3;
         roofed_forest.shrubType = (new byte[] {1, 2});
         roofed_forest.shrubTypeChance = (new double[] {0.7, 0.3});
-		roofed_forest.mushroomDensity = 0.04;
+	roofed_forest.mushroomDensity = 0.04;
 		
-		//Roofed Forest Mountains
+	//Roofed Forest Mountains
         roofed_forest_mountains.cliffs = false;
         roofed_forest_mountains.roughness = 16;
         roofed_forest_mountains.treeDensity = 0.09;
@@ -736,65 +736,65 @@ public class BiomeDescription {
         roofed_forest_mountains.shrubDensity = 0.3;
         roofed_forest_mountains.shrubType = (new byte[] {1, 2});
         roofed_forest_mountains.shrubTypeChance = (new double[] {0.7, 0.3});
-		roofed_forest_mountains.mushroomDensity = 0.04;
+	roofed_forest_mountains.mushroomDensity = 0.04;
+	
+	//Savanna
+	savanna.cliffs = false;
+	savanna.lakeChance = 0.01;
+	savanna.treeDensity = 0.003;
+	savanna.treeType = new TreeType[] {TreeType.ACACIA};
+	savanna.treeTypeChance = new double[] {0.1};
+	savanna.roughness = 4.0;
+	savanna.frequency = 0.2;
+	savanna.shrubDensity = 0.6;
+	savanna.shrubType = new byte[] {1};
+	savanna.shrubTypeChance = new double[] {1};
+	savanna.pumpkinDensity = 0.0;
+	savanna.watermelonDensity = 0.0;
+	
+	//Savanna Mountains
+	savanna_mountains.cliffs = false;
+	savanna_mountains.lakeChance = 0.01;
+	savanna_mountains.treeDensity = 0.003;
+	savanna_mountains.treeType = new TreeType[] {TreeType.ACACIA};
+	savanna_mountains.treeTypeChance = new double[] {0.1};
+	savanna_mountains.roughness = 12.0;
+	savanna_mountains.frequency = 0.2;
+	savanna_mountains.shrubDensity = 0.6;
+	savanna_mountains.shrubType = new byte[] {1};
+	savanna_mountains.shrubTypeChance = new double[] {1};
+	savanna_mountains.pumpkinDensity = 0.0;
+	savanna_mountains.watermelonDensity = 0.0;
 		
-		//Savanna
-		savanna.cliffs = false;
-		savanna.lakeChance = 0.01;
-		savanna.treeDensity = 0.003;
-		savanna.treeType = new TreeType[] {TreeType.ACACIA};
-		savanna.treeTypeChance = new double[] {0.1};
-		savanna.roughness = 4.0;
-		savanna.frequency = 0.2;
-		savanna.shrubDensity = 0.6;
-		savanna.shrubType = new byte[] {1};
-		savanna.shrubTypeChance = new double[] {1};
-		savanna.pumpkinDensity = 0.0;
-		savanna.watermelonDensity = 0.0;
+	//Savanna Plateau
+	savanna_plateau.cliffs = false;
+	savanna_plateau.lakeChance = 0.01;
+	savanna_plateau.treeDensity = 0.003;
+	savanna_plateau.treeType = new TreeType[] {TreeType.ACACIA};
+	savanna_plateau.treeTypeChance = new double[] {0.1};
+	savanna_plateau.roughness = 4.0;
+	savanna_plateau.frequency = 0.2;
+	savanna_plateau.shrubDensity = 0.6;
+	savanna_plateau.shrubType = new byte[] {1};
+	savanna_plateau.shrubTypeChance = new double[] {1};
+	savanna_plateau.pumpkinDensity = 0.0;
+	savanna_plateau.watermelonDensity = 0.0;
+	
+	//Savanna Plateau Mountains
+	savanna_plateau_mountains.cliffs = false;
+	savanna_plateau_mountains.lakeChance = 0.01;
+	savanna_plateau_mountains.treeDensity = 0.003;
+	savanna_plateau_mountains.treeType = new TreeType[] {TreeType.ACACIA};
+	savanna_plateau_mountains.treeTypeChance = new double[] {0.1};
+	savanna_plateau_mountains.roughness = 12.0;
+	savanna_plateau_mountains.frequency = 0.2;
+	savanna_plateau_mountains.shrubDensity = 0.6;
+	savanna_plateau_mountains.shrubType = new byte[] {1};
+	savanna_plateau_mountains.shrubTypeChance = new double[] {1};
+	savanna_plateau_mountains.pumpkinDensity = 0.0;
+	savanna_plateau_mountains.watermelonDensity = 0.0;
 		
-		//Savanna Mountains
-		savanna_mountains.cliffs = false;
-		savanna_mountains.lakeChance = 0.01;
-		savanna_mountains.treeDensity = 0.003;
-		savanna_mountains.treeType = new TreeType[] {TreeType.ACACIA};
-		savanna_mountains.treeTypeChance = new double[] {0.1};
-		savanna_mountains.roughness = 12.0;
-		savanna_mountains.frequency = 0.2;
-		savanna_mountains.shrubDensity = 0.6;
-		savanna_mountains.shrubType = new byte[] {1};
-		savanna_mountains.shrubTypeChance = new double[] {1};
-		savanna_mountains.pumpkinDensity = 0.0;
-		savanna_mountains.watermelonDensity = 0.0;
-		
-		//Savanna Plateau
-		savanna_plateau.cliffs = false;
-		savanna_plateau.lakeChance = 0.01;
-		savanna_plateau.treeDensity = 0.003;
-		savanna_plateau.treeType = new TreeType[] {TreeType.ACACIA};
-		savanna_plateau.treeTypeChance = new double[] {0.1};
-		savanna_plateau.roughness = 4.0;
-		savanna_plateau.frequency = 0.2;
-		savanna_plateau.shrubDensity = 0.6;
-		savanna_plateau.shrubType = new byte[] {1};
-		savanna_plateau.shrubTypeChance = new double[] {1};
-		savanna_plateau.pumpkinDensity = 0.0;
-		savanna_plateau.watermelonDensity = 0.0;
-		
-		//Savanna Plateau Mountains
-		savanna_plateau_mountains.cliffs = false;
-		savanna_plateau_mountains.lakeChance = 0.01;
-		savanna_plateau_mountains.treeDensity = 0.003;
-		savanna_plateau_mountains.treeType = new TreeType[] {TreeType.ACACIA};
-		savanna_plateau_mountains.treeTypeChance = new double[] {0.1};
-		savanna_plateau_mountains.roughness = 12.0;
-		savanna_plateau_mountains.frequency = 0.2;
-		savanna_plateau_mountains.shrubDensity = 0.6;
-		savanna_plateau_mountains.shrubType = new byte[] {1};
-		savanna_plateau_mountains.shrubTypeChance = new double[] {1};
-		savanna_plateau_mountains.pumpkinDensity = 0.0;
-		savanna_plateau_mountains.watermelonDensity = 0.0;
-		
-		//Small Mountains
+	//Small Mountains
         small_mountains.treeDensity = 0.01;
         small_mountains.treeType = (new TreeType[] {TreeType.TREE, TreeType.REDWOOD});
         small_mountains.treeTypeChance = (new double[] {0.8, 0.2});
@@ -809,16 +809,16 @@ public class BiomeDescription {
         small_mountains.pondWaterChance = 0.0;
         small_mountains.pondLavaChance = 0.0;
 		
-		//Stone Beach
-		stone_beach.islandRockMaterial = (byte)Material.STONE.getId();
-		stone_beach.islandSoilMaterial = (byte)Material.STONE.getId();
-		stone_beach.islandSurfaceMaterial = (byte)Material.STONE.getId();
-		stone_beach.lakeChance = 1.0;
-		stone_beach.treeDensity = 0.0;
-		stone_beach.cliffs = true;
-		stone_beach.roughness = 6;
-		stone_beach.frequency = 0.3;
-		stone_beach.cactusDensity = 0.01;
+	//Stone Beach
+	stone_beach.islandRockMaterial = (byte)Material.STONE.getId();
+	stone_beach.islandSoilMaterial = (byte)Material.STONE.getId();
+	stone_beach.islandSurfaceMaterial = (byte)Material.STONE.getId();
+	stone_beach.lakeChance = 1.0;
+	stone_beach.treeDensity = 0.0;
+	stone_beach.cliffs = true;
+	stone_beach.roughness = 6;
+	stone_beach.frequency = 0.3;
+	stone_beach.cactusDensity = 0.01;
         stone_beach.shrubDensity = 0.02;
         stone_beach.shrubType = new byte[1];
         stone_beach.shrubTypeChance = (new double[] {1.0});
@@ -827,73 +827,73 @@ public class BiomeDescription {
         stone_beach.lavaFallChance = 0.0;
         stone_beach.chanceOfCave = 0.0;
         
-		//Sunflower Plains (Sunflowers do not work at present, biome will act as "Flower Plains")
-		sunflower_plains.lakeChance = 0.01;
-		sunflower_plains.treeDensity = 0.001;
-		sunflower_plains.roughness = 2.0;
-		sunflower_plains.frequency = 0.3;
-		sunflower_plains.shrubDensity = 0.3;
-		sunflower_plains.flowerDensity = 0.2;
-		sunflower_plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
-		sunflower_plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
-        
-		//Swampland
-		swampland.cliffs = false;
-		swampland.lakeChance = 0.9;
-		swampland.treeDensity = 0.01;
-		swampland.treeType = (new TreeType[] {TreeType.SWAMP});
-		swampland.treeTypeChance = (new double[] {1.0});
-		swampland.roughness = 4.0;
-		swampland.frequency = 0.2;
-		swampland.islandLakeBedDirt = (byte) Material.DIRT.getId();
-		swampland.islandLakeBedMaterial = (byte) Material.CLAY.getId();
-		swampland.shrubDensity = 0.3;
-		swampland.shrubType = new byte[] {1};
-		swampland.shrubTypeChance = new double[] {1.0};
-		swampland.flowerDensity = 0.03;
-		swampland.flowerType = new byte[] {1, 2, 3};
-		swampland.flowerTypeChance = new double[] {0.3, 0.3, 0.4};
-		
-		//Swampland Mountains
-		swampland_mountains.cliffs = true;
-		swampland_mountains.lakeChance = 0.9;
-		swampland_mountains.treeDensity = 0.01;
-		swampland_mountains.treeType = (new TreeType[] {TreeType.SWAMP});
-		swampland_mountains.treeTypeChance = (new double[] {1.0});
-		swampland_mountains.roughness = 8.0;
-		swampland_mountains.frequency = 0.2;
-		swampland_mountains.islandLakeBedDirt = (byte) Material.DIRT.getId();
-		swampland_mountains.islandLakeBedMaterial = (byte) Material.CLAY.getId();
-		swampland_mountains.shrubDensity = 0.3;
-		swampland_mountains.shrubType = new byte[] {1};
-		swampland_mountains.shrubTypeChance = new double[] {1.0};
-		swampland_mountains.flowerDensity = 0.03;
-		swampland_mountains.flowerType = new byte[] {1, 2, 3};
-		swampland_mountains.flowerTypeChance = new double[] {0.3, 0.3, 0.4};
-		
-		//Taiga
-		taiga.cliffs = true;
-		taiga.lakeChance = 0.01;
-		taiga.treeDensity = 0.06;
-		taiga.treeType = (new TreeType[] {TreeType.REDWOOD});
-		taiga.treeTypeChance = (new double[] {1.0});
-		taiga.roughness = 4.0;
-		taiga.frequency = 0.2;
-		taiga.shrubDensity = 0.6;
-		taiga.shrubType = new byte[] {1, 2};
-		taiga.shrubTypeChance = new double[] {0.9, 0.1};
-		
-		//Taiga Mountains
-		taiga_mountains.cliffs = true;
-		taiga_mountains.lakeChance = 0.01;
-		taiga_mountains.treeDensity = 0.06;
-		taiga_mountains.treeType = (new TreeType[] {TreeType.REDWOOD});
-		taiga_mountains.treeTypeChance = (new double[] {1.0});
-		taiga_mountains.roughness = 12.0;
-		taiga_mountains.frequency = 0.2;
-		taiga_mountains.shrubDensity = 0.6;
-		taiga_mountains.shrubType = new byte[] {1, 2};
-		taiga_mountains.shrubTypeChance = new double[] {0.9, 0.1};
+	//Sunflower Plains (Sunflowers do not work at present, biome will act as "Flower Plains")
+	sunflower_plains.lakeChance = 0.01;
+	sunflower_plains.treeDensity = 0.001;
+	sunflower_plains.roughness = 2.0;
+	sunflower_plains.frequency = 0.3;
+	sunflower_plains.shrubDensity = 0.3;
+	sunflower_plains.flowerDensity = 0.2;
+	sunflower_plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
+	sunflower_plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
+
+	//Swampland
+	swampland.cliffs = false;
+	swampland.lakeChance = 0.9;
+	swampland.treeDensity = 0.01;
+	swampland.treeType = (new TreeType[] {TreeType.SWAMP});
+	swampland.treeTypeChance = (new double[] {1.0});
+	swampland.roughness = 4.0;
+	swampland.frequency = 0.2;
+	swampland.islandLakeBedDirt = (byte) Material.DIRT.getId();
+	swampland.islandLakeBedMaterial = (byte) Material.CLAY.getId();
+	swampland.shrubDensity = 0.3;
+	swampland.shrubType = new byte[] {1};
+	swampland.shrubTypeChance = new double[] {1.0};
+	swampland.flowerDensity = 0.03;
+	swampland.flowerType = new byte[] {1, 2, 3};
+	swampland.flowerTypeChance = new double[] {0.3, 0.3, 0.4};
+	
+	//Swampland Mountains
+	swampland_mountains.cliffs = true;
+	swampland_mountains.lakeChance = 0.9;
+	swampland_mountains.treeDensity = 0.01;
+	swampland_mountains.treeType = (new TreeType[] {TreeType.SWAMP});
+	swampland_mountains.treeTypeChance = (new double[] {1.0});
+	swampland_mountains.roughness = 8.0;
+	swampland_mountains.frequency = 0.2;
+	swampland_mountains.islandLakeBedDirt = (byte) Material.DIRT.getId();
+	swampland_mountains.islandLakeBedMaterial = (byte) Material.CLAY.getId();
+	swampland_mountains.shrubDensity = 0.3;
+	swampland_mountains.shrubType = new byte[] {1};
+	swampland_mountains.shrubTypeChance = new double[] {1.0};
+	swampland_mountains.flowerDensity = 0.03;
+	swampland_mountains.flowerType = new byte[] {1, 2, 3};
+	swampland_mountains.flowerTypeChance = new double[] {0.3, 0.3, 0.4};
+	
+	//Taiga
+	taiga.cliffs = true;
+	taiga.lakeChance = 0.01;
+	taiga.treeDensity = 0.06;
+	taiga.treeType = (new TreeType[] {TreeType.REDWOOD});
+	taiga.treeTypeChance = (new double[] {1.0});
+	taiga.roughness = 4.0;
+	taiga.frequency = 0.2;
+	taiga.shrubDensity = 0.6;
+	taiga.shrubType = new byte[] {1, 2};
+	taiga.shrubTypeChance = new double[] {0.9, 0.1};
+	
+	//Taiga Mountains
+	taiga_mountains.cliffs = true;
+	taiga_mountains.lakeChance = 0.01;
+	taiga_mountains.treeDensity = 0.06;
+	taiga_mountains.treeType = (new TreeType[] {TreeType.REDWOOD});
+	taiga_mountains.treeTypeChance = (new double[] {1.0});
+	taiga_mountains.roughness = 12.0;
+	taiga_mountains.frequency = 0.2;
+	taiga_mountains.shrubDensity = 0.6;
+	taiga_mountains.shrubType = new byte[] {1, 2};
+	taiga_mountains.shrubTypeChance = new double[] {0.9, 0.1};
 		
 	}
 	
