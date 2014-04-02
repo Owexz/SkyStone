@@ -7,8 +7,7 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-// Referenced classes of package net.owexz.skystone:
-//            SpawnListener, SkyStoneGenerator
+// Referenced classes of package net.owexz.skystone: SkyStoneGenerator
 
 public class SkyStone extends JavaPlugin
 {
@@ -17,7 +16,6 @@ public class SkyStone extends JavaPlugin
     {
         log = Logger.getLogger("Minecraft");
         generator = null;
-        spawnListener = new SpawnListener(this);
     }
 
     public static void log(String msg)
@@ -30,7 +28,6 @@ public class SkyStone extends JavaPlugin
         instance = this;
         logMessage("SkyStone Enabled.");
         PluginManager pm = getServer().getPluginManager();
-        pm.registerEvents(new SpawnListener(this), this);
     }
 
     public void onDisable()
@@ -54,5 +51,4 @@ public class SkyStone extends JavaPlugin
     public static SkyStone instance;
     public Logger log;
     private SkyStoneGenerator generator;
-    public SpawnListener spawnListener;
 }

@@ -7,11 +7,11 @@ public class CaveDescription
     public CaveDescription()
     {
         cavePercentage = 0.10000000000000001D;
-        maxRadius = 3D;
-        startRadius = 2D;
+        maxRadius = 5D;
+        startRadius = 3D;
         minRadius = 2D;
         maxDeltaRadius = 0.29999999999999999D;
-        turbulenceMagnitude = 0.0D;
+        turbulenceMagnitude = 0.1D;
         turbulenceFrequency = 0.5D;
         maxSplit = 2;
         splitChance = 0.29999999999999999D;
