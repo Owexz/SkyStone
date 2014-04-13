@@ -272,7 +272,7 @@ public class BiomeDescription {
         extreme_hills.pondWaterChance = 0.0;
         extreme_hills.pondLavaChance = 0.0;
         extreme_hills.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00005,  0.00005}; 
+        extreme_hills.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005}; 
         extreme_hills.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
@@ -294,7 +294,7 @@ public class BiomeDescription {
         extreme_hills_mountains.islandSoilMaterial = (byte)Material.STONE.getId();
         extreme_hills_mountains.islandSurfaceMaterial = (byte)Material.STONE.getId();
         extreme_hills_mountains.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_mountains.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00005,  0.00005}; 
+        extreme_hills_mountains.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005}; 
         extreme_hills_mountains.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_mountains.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_mountains.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
@@ -314,7 +314,7 @@ public class BiomeDescription {
         extreme_hills_plus.pondWaterChance = 0.0;
         extreme_hills_plus.pondLavaChance = 0.0;
         extreme_hills_plus.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_plus.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00005,  0.00005}; 
+        extreme_hills_plus.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005}; 
         extreme_hills_plus.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_plus.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_plus.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
@@ -336,7 +336,7 @@ public class BiomeDescription {
         extreme_hills_plus_mountains.islandSoilMaterial = (byte)Material.STONE.getId();
         extreme_hills_plus_mountains.islandSurfaceMaterial = (byte)Material.GRAVEL.getId();
         extreme_hills_plus_mountains.oreTypeMaterial = new byte[] {13, 16, 15, 14, 73, 21, 56, 35, 23, 97};				//Ores	(in order: {gravel, coal, iron, gold, lapis, redstone, diamond, emerald(replaced), silverfish}
-        extreme_hills_plus_mountains.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00005,  0.00005};  
+        extreme_hills_plus_mountains.oreTypeChance = new double[] {0.002, 0.0012, 0.0005, 0.00025, 0.00025, 0.0005, 0.0001, 0.00006,  0.00005};  
         extreme_hills_plus_mountains.oreTypeMinDepth = new double[] {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
         extreme_hills_plus_mountains.oreTypeVeinMin = new int[] {5, 6, 4, 3, 5, 3, 2, 1, 1};	
         extreme_hills_plus_mountains.oreTypeVeinMax = new int[] {16, 22, 24, 6, 7, 6, 5, 1, 1};
@@ -1024,7 +1024,7 @@ public class BiomeDescription {
 	public int flowerClusterMax = 7;				//Flower cluster maximum size
 	
 	public double mushroomDensity = 0.0;			//Mushroom cluster density, roll per surface grass block
-	public double mushroomClusterIsRedChance = 0.5;	//Chance for cluster to be red, rolled after cluster is guaranteed
+	public double mushroomClusterIsRedChance = 0.4;	//Chance for cluster to be red, rolled after cluster is guaranteed
 	public int mushroomClusterMin = 3;				//Mushroom cluster minimum size
 	public int mushroomClusterMax = 5;				//Mushroom cluster maximum size
 	
@@ -1042,7 +1042,7 @@ public class BiomeDescription {
 	
 	//Extras
 	public double liquidFallChance = 0.001;	//Chance of a lava or water fall, rolled per underground stone with exactly one air adjacent
-	public double lavaFallChance = 0.0;		//Chance that the liquid fall is lava, rolled after liquid fall is guaranteed
+	public double lavaFallChance = 0.00001;		//Chance that the liquid fall is lava, rolled after liquid fall is guaranteed
 	
 	public double boulderDensity = 0.0;	//Mossy Cobblestone cluster density, rolled per surface podzol block (Mega Taiga only)
 	public int boulderClusterMin = 3;	//Cluster minimum size
