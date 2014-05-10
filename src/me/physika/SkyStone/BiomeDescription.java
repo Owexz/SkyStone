@@ -213,7 +213,7 @@ public class BiomeDescription {
         desert.lakeChance = 0.0;
         desert.treeDensity = 0.0;
         desert.cliffs = false;
-        desert.roughness = 6;
+        desert.roughness = 3;
         desert.frequency = 0.3;
         desert.cactusDensity = 0.01;
         desert.shrubDensity = 0.02;
@@ -698,7 +698,7 @@ public class BiomeDescription {
 	plains.treeDensity = 0.001;
 	plains.roughness = 3.0;
 	plains.frequency = 0.6;
-	plains.shrubDensity = 0.3;
+	plains.shrubDensity = 0.4;
 	plains.flowerDensity = 0.04;
 	plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
 	plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
@@ -833,7 +833,7 @@ public class BiomeDescription {
 	sunflower_plains.roughness = 2.0;
 	sunflower_plains.frequency = 0.3;
 	sunflower_plains.shrubDensity = 0.3;
-	sunflower_plains.flowerDensity = 0.2;
+	sunflower_plains.flowerDensity = 0.16;
 	sunflower_plains.flowerType = new byte[] {1, 2, 4, 5, 6, 7, 8, 9, 10};
 	sunflower_plains.flowerTypeChance = new double[] {0.2, 0.15, 0.15, 0.15, 0.5, 0.5, 0.5, 0.5, 0.15};
 
@@ -973,9 +973,9 @@ public class BiomeDescription {
 	public int islandSizeMin = 70;					//Minimum lateral size of the island
 	public int islandSizeMax = 120;					//Maximum lateral size of the island
 	public double islandSquareRegularity = 0.5;		//Coefficient of squareness (totally made this up but it works)
-	public int islandHeightMin = 16;				//Minimum vertical size of the island
+	public int islandHeightMin = 20;				//Minimum vertical size of the island
 	public int islandHeightMax = 128;				//Maximum vertical size of the island
-	public double islandHeightRatio = 0.4;			//Ratio of height attributed to size 
+	public double islandHeightRatio = 0.45;			//Ratio of height attributed to size 
 	public double islandHeightRegularity = 1.0;		//Coefficient of height according to the calculated ratio
 	public int islandAltitudeMin = 16;				//Minimum spawn altitude (adjusted by height of the island)
 	public int islandAltitudeMax = 128;				//Maximum spawn altitude (adjusted by height of the island)
